@@ -6,6 +6,12 @@ body{
   background-color: #222222;
 }
 
+p, h1{
+  font-size: 14px;
+  font-weight: normal;
+  font-family: arial;
+}
+
 /* Typography */
 :root {
   font-family: "Noto Sans KR", sans-serif;
