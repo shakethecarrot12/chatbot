@@ -1,0 +1,43 @@
+/*reset*/
+body{
+  margin: unset;
+  padding: unset;
+
+  background-color: #222222;
+}
+
+/* Typography */
+:root {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.wrapper{
+  background-color:#eeeeee;
+  width: 640px;
+  height: 326px;
+  margin: 150px auto;
+
+  
+}
+
+/*main*/
+.main{
+  box-shadow: inset 0 0 20px red;
+}
+
+.chat-wrapper{
+  display: flex;
+}
+
+.profile-img{
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+  border: solid 4px #ffffff;
+}
+
+/*footer*/
+.footer{
+  box-shadow: inset 0 0 20px red;
+}
