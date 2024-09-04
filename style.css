@@ -1,17 +1,19 @@
 /*reset*/
-body{
+body {
   margin: unset;
   padding: unset;
 
   background-color: #222222;
 }
 
-p, h1{
-  margin:unset;
+p,
+h1 {
+  margin: unset;
   padding: unset;
 }
 
-p, h1{
+p,
+h1 {
   font-size: 14px;
   font-weight: normal;
   font-family: arial;
@@ -22,29 +24,33 @@ p, h1{
   font-family: "Noto Sans KR", sans-serif;
 }
 
-.wrapper{
-  background-color:#eeeeee;
+.wrapper {
+  background-color: #eeeeee;
   width: 640px;
   height: 326px;
   margin: 150px auto;
 
   border-radius: 10px;
 
-  
+
 }
 
 /*main*/
-.main{
-  
+.main {
+  padding: 18px 20px;
 }
 
-.chat-wrapper{
+.chat-wrapper {
   display: flex;
   gap: 18px;
-  margin:20px;
+  margin-bottom: 20px;
 }
 
-.profile-img{
+.reverse{
+  flex-direction: row-reverse;
+}
+
+.profile-img {
   width: 80px;
   height: 80px;
 
@@ -52,27 +58,87 @@ p, h1{
   border: solid 4px #ffffff;
 }
 
-.bubble{
+.bubble {
   background-color: #ffffff;
   border-radius: 8px;
+  padding: 20px 24px;
+
+  position: relative;
 }
 
+.bubble::before {
+  content: '';
+  background-color: #ffffff;
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+
+  
+  transform: rotate(45deg);
+  left: -6px;
+  bottom: 50%;
+}
+
+.bubble-second {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px 24px;
+
+  position: relative;
+}
+.bubble-second::before {
+  content: '';
+  background-color: #ffffff;
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+
+  
+  transform: rotate(45deg);
+  right: -6px;
+  bottom: 50%;
+}
+
+
+.name{
+  font-family:'Noto Sans KR';
+  font-size:14px;
+  font-weight: bold;
+}
+
+.name.first{
+  color:#6557C0;
+}
+.name.second{
+  color:#35E792;
+}
+
+.message{
+  color:#666666;
+  font-family:'Noto Sans KR';
+  font-size:14px;
+  font-weight: bold;
+}
+
+
 /*footer*/
-.footer{
+.footer {
   display: flex;
   align-items: center;
 }
 
-.out-log{
+.out-log {
   color: #999999;
   font-size: 12px;
   align-items: center;
   line-height: 18px;
   width: 200px;
-  
+
 }
 
-.dummy{
+.dummy {
   display: block;
   width: 200px;
   height: 1px;
